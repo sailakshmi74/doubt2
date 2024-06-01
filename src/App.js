@@ -70,14 +70,8 @@ class App extends Component {
   }
 
   render() {
-    const {
-      website,
-      username,
-      password,
-      latestList,
-      isShow,
-      searchInput,
-    } = this.state
+    const {website, username, password, latestList, isShow, searchInput} =
+      this.state
     let {isTrue} = this.state
     const newList = latestList.filter(eachValue =>
       eachValue.websiteName.toLowerCase().includes(searchInput.toLowerCase()),
